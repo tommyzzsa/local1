@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第三次作业</title>
+</head>
+<script >
+ //第一种创建方式
+var obj = new Object();
+obj.name = 'Emma Watson';
+obj.age = 22;
+console.log (obj);
+//第二种创建方式
+var obj = {
+    name1:'Emma Watson',
+    age :22
+}
+console.log(obj);
+//第三种创建方式
+function Person(){
+    this.name = 'Emma Watson';
+    this.age = 22;
+}
+let p = new Person();
+console.log (p);
+
+
+var obj = {name:"Emma Watson",age:22,gender:'male'};
+function copy(insertObj){
+let newObj = {};
+    for(let i in insertObj)
+    {
+    newObj[i] = insertObj[i];
+    }
+    return newObj;
+}
+
+let obj1 = copy(obj);
+let obj2 = copy(obj);
+let obj3 = copy(obj);
+let obj4 = copy(obj);
+let obj5 = copy(obj);
+let obj6 = copy(obj);
+
+let arr = [];
+
+arr.push(obj1,obj2,obj3,obj4,obj5,obj6);
+
+console.table(arr);
+</script>
+<body>
+    
+</body>
+</html>

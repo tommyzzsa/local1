@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>第三次作业</title>
-</head>
-<script >
+
  //第一种创建方式
 var obj = new Object();
 obj.name = 'Emma Watson';
@@ -26,8 +18,9 @@ function Person(){
 let p = new Person();
 console.log (p);
 
-
-var obj = {name:"Emma Watson",age:22,gender:'male'};
+let a = {name:"Billy",age:21,gender:'female'};
+let b = {name:"Zoey",age:22,gender:'female'};
+let c = {name:"Emma Watson",age:22,gender:'female'};
 function copy(insertObj){
 let newObj = {};
     for(let i in insertObj)
@@ -37,20 +30,13 @@ let newObj = {};
     return newObj;
 }
 
-let obj1 = copy(obj);
-let obj2 = copy(obj);
-let obj3 = copy(obj);
-let obj4 = copy(obj);
-let obj5 = copy(obj);
-let obj6 = copy(obj);
+let obj1 = copy(a);
+let obj2 = copy(b);
+let obj3 = copy(c);
+
 
 let arr = [];
 
 arr.push(obj1,obj2,obj3,obj4,obj5,obj6);
 
 console.table(arr);
-</script>
-<body>
-    
-</body>
-</html>
